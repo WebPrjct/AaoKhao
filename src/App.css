@@ -1,38 +1,410 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Baloo Bhai 2', cursive;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: url("/public/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.banner_content{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+.container{
+  width:1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.banner_text{
+  width: 500px;
+}
+.banner_text h3{
+  font-size: 50px;
+}
+.banner_text h1{
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: 900;
+  margin-top: 20px;
+}
+.banner_text p{
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navbar_text{
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+.logo{
+  width: 40%;
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: larger;
+}
+.logo span{
+  color: rgb(255, 69, 79);
+}
+.navbar ul{
+  width: 60%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 0 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.banner_btn{
+  margin-top: 35px;
+}
+.btn{
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 30px;
+  font-size: 12px;
+  padding: 20px 40px;
+}
+.btn-smart{
+  background:rgb(255, 69, 79);
+}
+.p-25{
+  padding: 45px;
+}
+.row{
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  flex-wrap:wrap ;
+}
+.col-6{
+  width: 50%;
+}
+.about h3{
+  color: rgb(37,37,37,0.7);
+  font-size: 30px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+.about h1{
+  font-size: 40px;
+  color: #252525;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+.about p{
+  font-size: 18px;
+  color: #8b8b8b;
+  font-weight: 300;
+}
+.about_btn{
+  margin-top: 25px;
+}
+.about_img{
+  width: 100%;
+  overflow: hidden;
+  background: url("/public/img/pizza.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+}
+.about_img img{
+  width: 100%;
+}
+.shop{
+  width: 100%;
+  background: url("/public/img/bg.jpg");
+  height: 450px;
+  background-attachment: fixed;
+}
+.shop_text{
+  height: 450px;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  justify-content: center;
+  margin: 0 auto;
+  color: #fff;
+}
+.shop_text h1{
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.5px;
+}
+.shop_btn{
+  margin-top: 35px;
+}
+.clients{
+  width: 100%;
+  padding: 80px 0;
+  background: url("/public/img/bg.jpg");
+  background-repeat: no-repeat;
+  color: #fff;
+  background-attachment: fixed;
+}
+.col-3{
+  width: 25%;
+}
+.client{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.client h1{
+  font-style: 45px;
+}
+.client p{
+  font-style: 18px;
+  font-weight: 400;
+  margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.prices{
+  width: 100%;
+  padding: 80px 0;
+}
+.col-4{
+  width: 33%; 
+}
+.price{
+  padding: 20px;
+  text-align: center;
+}
+.price_img{
+  width: 100%;
+}
+.price_img-1{
+  width: 100%;
+  height: 55vh;
+  background: url("/public/img/pizza1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price_img-2{
+  width: 100%;
+  height: 55vh;
+  background: url("/public/img/pizza2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price_img-3{
+  width: 100%;
+  height: 55vh;
+  background: url("/public/img/pizza3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price_img-4{
+  width: 100%;
+  height: 55vh;
+  background: url("/public/img/pizza4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price_img-5{
+  width: 100%;
+  height: 55vh;
+  background: url("/public/img/pizza5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price_img-6{
+  width: 100%;
+  height: 55vh;
+  background: url("/public/img/pizza6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price_img img{
+  width: 250px;
+}
+.price_heading{
+  margin-top: 20px;
+  font-size: 25px;
+}
+.price_text{
+  margin-top: 15px;
+  color: #888888;
+  font-size: 18px;
+  font-weight: 300;
+}
+.price_rs{
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+
+@media (max-width: 700px) {
+  .navbar{
+    width: 100%;
+  }
+  .navbar_text {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navbar ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    /* border: 2px solid red; */
+    margin-top: 15px;
+  }
+  .logo{
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .banner_text {
+    width: auto;
+  }
+  .banner_text h3 {
+    font-size: 25px !important;
+  }
+  .banner_text h1 {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 900;
+    margin-top: 20px;
+  }
+  .banner_text p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  .navbar_ul {
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar_ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .col-3,
+  .col-4,
+  .col-6 {
+    width: 100%;
+  }
+  .client {
+    margin: 20px 0;
+  }
+  .about h1 {
+    font-size: 25px;
+  }
+  .shop h1 {
+    font-size: 25px;
+  }
+  .menu h1 {
+    font-size: 25px;
+  }
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .about_img{
+    /* width: 100%; */
+    overflow: hidden;
+    background: url("/public/img/pizza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    /* border: 2px solid red; */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 450px) {
+  .shop_text {
+    width: 300px;
+    /* border: 2px solid red; */
   }
-  to {
-    transform: rotate(360deg);
+  .about_img{
+    /* width: 100%; */
+    overflow: hidden;
+    background: url("/public/img/pizza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    /* border: 2px solid red; */
+  }
+  .price_img-1{
+    width:100%;
+    height: 33vh;
+    background: url("/public/img/pizza1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 2px solid red; */
+  }
+  .price_img-2{
+    width: 100%;
+    height: 33vh;
+    background: url("/public/img/pizza2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .price_img-3{
+    width: 100%;
+    height: 33vh;
+    background: url("/public/img/pizza3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .price_img-4{
+    width: 100%;
+    height: 33vh;
+    background: url("/public/img/pizza4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .price_img-5{
+    width: 100%;
+    height: 33vh;
+    background: url("/public/img/pizza5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .price_img-6{
+    width: 100%;
+    height: 33vh;
+    background: url("/public/img/pizza6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
